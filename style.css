@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/*fonte Nunito usado no titulo */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*reset basico de configurações */
+
+/*cores utilizadas 
+
+#652f91 · roxo.
+#000000 · fundos
+#ffffff · texto e titulos */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*configurações de header e footer(começo e final de página */
+
+/*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+header{
+    background-color: #652f91 ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+    border: #ffffff;
+}
+
+/*posção da logo no header */
+img{
+    display: flex;
+    justify-content: left;
+    width: 130px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+/*caixa para configurar as abas */
+.abas{
+    display: flex;
+    justify-content: center;
+}
+
+/*configurações dos links das abas*/
+a{
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+    
+}
+
+/*cor para ficar com o contraste certo nas caixas*/
+
+
+article:hover{
+    transform: translatey(-20px);
+    transition: 1.2s;
+    font-weight: 200px;
+
+}
+
+a:hover{
+    color: #000000; 
+}
+
+/*footer config*/
+
+footer{
+    background-color: #652f91 ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+}
+
+hr{
+    width: 60%;
+    margin-left: 350px;
+}
+/*configuração de centralição */
+
+.text{
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* confing da primeira sessão */
+
+.inicio{
+    text-align: left;
+    padding-left: 280px;
+    padding-top: 80px;
+}
+
+h1{
+    font-size: 60px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+}
+
+p{
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 60px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*criar as caixas e colocar lado a lado*/
+.primeirascaixas{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+/*config de posição e conteúdo dentro da 1 caixa */
+.caixainf{
+    background-color: #652f91;
+    border-radius: 19px;
+
+
+    width: 640px ;
+    height: 200px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+/*config de posição e conteúdo dentro da 1 caixa */
+.caixainff{
+    background-color: #ffffff;
+    border-radius: 19px;
+    color: #000000;
+
+
+    width: 640px ;
+    height: 200px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+
+}
+
+
+/*config dos textos de ajuda e compra das primeiras caixas */
+#caixaesquerda{
+text-align: left;
+font-size:15px;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+    
+}
+
+h2{
+text-align: left;
+font-size: 25px;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+
+}
