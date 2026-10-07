@@ -23,11 +23,12 @@
 
 /*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
 body{
+    
     background-color: #000000;
     color: #ffffff;
 }
 header{
-    background-color: #652f91 ;
+    background-color: #14263f ;
     color:#ffffff;
     width: 100%;
     height: 120px;
@@ -44,11 +45,16 @@ img{
 
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
 /*caixa para configurar as abas */
 .abas{
     display: flex;
     justify-content: center;
 }
+
 
 /*configurações dos links das abas*/
 a{
@@ -61,37 +67,61 @@ a{
     font-weight: 60px;
     
 }
+    
 
 /*cor para ficar com o contraste certo nas caixas*/
 
+article{
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+}
 
 article:hover{
     transform: translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
+    color: #000000; 
 
 }
 
 a:hover{
     color: #000000; 
+
 }
 
 /*footer config*/
 
 footer{
-    background-color: #652f91 ;
+    background-color: #14263f ;
     color:#ffffff;
     width: 100%;
     height: 120px;
 }
 
-hr{
-    width: 60%;
-    margin-left: 350px;
+/*caixa que vai as informações dentro */
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
-/*configuração de centralição */
+hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    margin-left: 420px;
+
+}
+/*configuração de centralição do footer */
 
 .text{
+    justify-content: center;
     text-align: center;
     padding-top: 30px;
 }
@@ -101,12 +131,17 @@ hr{
 .inicio{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding-left: 150px;
+    justify-content: center;
+
+    padding-left: 425px;
     padding-top: 80px;
 }
 
 h1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
     font-size: 60px;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -115,6 +150,10 @@ h1{
 }
 
 p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
   font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 60px;
@@ -127,14 +166,16 @@ p{
     display: flex;
     justify-content: center;
     text-align: left;
+    border: 1000px #ade8f4;
 }
 
 /*config de posição e conteúdo dentro da 1 caixa */
 .caixainf{
     display: flex;
     flex-direction: column;
-    background-color: #652f91;
+    background-color: #14263f;
     border-radius: 19px;
+    border: 3px solid #0077b6;
 
 
     width: 500px;
@@ -143,6 +184,7 @@ p{
     margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
+    color: #ffffff;
 
 }
 
@@ -156,9 +198,10 @@ p{
 
 /*config de posição e conteúdo dentro da 2 caixa */
 .caixainff{
-    background-color: #ffffff;
+    background-color: #652f91 ;
     border-radius: 19px;
-    color: #000000;
+    color: #ffffff;
+    border: 3px solid #ffffff;
 
 
 
@@ -172,8 +215,7 @@ p{
 
 /*efeitos caixas 2*/
 .caixainff:hover{
-    color:#652f91;
-    transform : translatey(-20px);
+    transform: translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
     
@@ -204,37 +246,53 @@ h2{
 
 /*tconfigurações de trilhas 1 pagina */
 
+/*caixa pai das 3 caixas menores*/
 .meio{
+
     display: flex;
     flex-direction: row;   
     align-items: center; 
-    gap: 20px;
+    gap: 19px;
     justify-content: center;
 
 }
 
+/*config do titulo 2 bloco */
 #TRILHA{
-    padding-left: 150px;
-    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 425px;
+    padding-top: 18px;
+    color:#ffffff;
+
+    gap:20px;
+
+    font-size: 35px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
 }
 
-#espaçodireita{
+
+
+/*#espaçodireita{
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-left: 150px;
-}
+}*/
 
+/*config 3 caixas menores */
 .jornada{
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #14263f;
+    color: #ffffff;
     border-radius: 19px;
 
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 60px;
     font-style: normal;
-
 
 
     align-items: center;
@@ -244,15 +302,17 @@ h2{
     padding-top: 18px;
     padding-left: 18px;
     margin-top: 20px;
-    width: 280px;
-    height: 300px;
+    margin-bottom: 25px;
+    width: 324px;
+    height: 180px;
+    border: 2px solid #023e8a;
 }
 
+/*organização dos texto das caixas do segundo topico */
 #caixaservicos{
     padding-top: 15px;
-    font-size: 18px
+    font-size: 18px;
+    margin-top: 10px ;
 }
 
-#ordenadosentidos{
-    
-}
+
