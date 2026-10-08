@@ -9,8 +9,9 @@
 
 /*cores utilizadas 
 
-#652f91 · roxo.
-#000000 · fundos
+021125 · fundos das sessões
+14263f  . cor das caixar menores
+023e8a . cor das bordas e sombreados,fundos 3d das caixas menores
 #ffffff · texto e titulos */
 *{
     margin: 0%;
@@ -24,7 +25,7 @@
 /*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
 body{
     
-    background-color: #000000;
+    background-color: #021125;
     color: #ffffff;
 }
 header{
@@ -48,6 +49,7 @@ img{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: left;
 }
 /*caixa para configurar as abas */
 .abas{
@@ -57,7 +59,8 @@ main{
 
 
 /*configurações dos links das abas*/
-a{
+
+.cor{
     color: #ffffff;
     text-align: right;
     margin-right: 20px;
@@ -66,6 +69,9 @@ a{
     font-style: normal;
     font-weight: 60px;
     
+}
+.cor:hover{
+    color: #000000;
 }
     
 
@@ -86,12 +92,6 @@ article:hover{
     transition: 1.2s;
     font-weight: 200px;
     color: #000000; 
-
-}
-
-a:hover{
-    color: #000000; 
-
 }
 
 /*footer config*/
@@ -114,10 +114,10 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55%;
-    margin-left: 420px;
-
+    width: 40%;
+    margin-left: 380px;
 }
+
 /*configuração de centralição do footer */
 
 .text{
@@ -131,12 +131,13 @@ hr{
 .inicio{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 
-    padding-left: 425px;
-    padding-top: 80px;
+    padding-left: 105px;
+    padding-top: 60px;
 }
 
+/*config do titulo da primeira pagina*/
 h1{
     display: flex;
     flex-direction: column;
@@ -149,6 +150,8 @@ h1{
     font-style: normal;
 }
 
+
+/*fonte e forma de se porta*/
 p{
     display: flex;
     flex-direction: column;
@@ -181,7 +184,7 @@ p{
     width: 500px;
     height: 200px;
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
     color: #ffffff;
@@ -190,15 +193,19 @@ p{
 
 /*efeitos caixas 1*/
 .caixainf:hover{
-    color: #ffffff;
     transform : translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
+
+    background-color: #023e8a ;
+    border-radius: 19px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
 }
 
 /*config de posição e conteúdo dentro da 2 caixa */
 .caixainff{
-    background-color: #652f91 ;
+    background-color: #023e8a ;
     border-radius: 19px;
     color: #ffffff;
     border: 3px solid #ffffff;
@@ -208,7 +215,7 @@ p{
     width: 500px ;
     height: 200px;
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -218,6 +225,10 @@ p{
     transform: translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
+
+    background-color: #14263f;
+    border-radius: 19px;
+    border: 3px solid #0077b6;
     
 }
 
@@ -252,7 +263,7 @@ h2{
     display: flex;
     flex-direction: row;   
     align-items: center; 
-    gap: 19px;
+    gap: 38px;
     justify-content: center;
 
 }
@@ -261,8 +272,8 @@ h2{
 #TRILHA{
     display: flex;
     flex-direction: row;
-    padding-left: 425px;
-    padding-top: 18px;
+    padding-left: 105px;
+    padding-top: 25px;
     color:#ffffff;
 
     gap:20px;
@@ -302,10 +313,19 @@ h2{
     padding-top: 18px;
     padding-left: 18px;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     width: 324px;
     height: 180px;
-    border: 2px solid #023e8a;
+    border: 1px solid #023e8a;
+    box-shadow:10px 10px 0px #023e8a;
+}
+
+/*transição efeito para mudar cor da caixa quando o mousse passar ou ficar em cima da caixa*/
+.jornada:hover{
+    transition: 1.2s;
+    transform:  translateY(28px) ;
+    background-color: #023e8a;
+    box-shadow:10px 10px 0px #14263f;
 }
 
 /*organização dos texto das caixas do segundo topico */
@@ -315,4 +335,35 @@ h2{
     margin-top: 10px ;
 }
 
+/*config do botão do projeto cor,tamanho e etc*/
 
+.projeto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #021125;
+    margin-left: 110px;
+    margin-bottom: 70px;
+    padding: 18px;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+    border: 1px solid #ade8f4;
+    text-align: center;
+}
+.projeto:hover{
+    color:#0077b6;
+}
+
+/*removi a bordar, e a borda padrão do elemeno botão*/
+button{
+    outline: none;
+    border: none;
+    background-color: #021125;
+    
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+}
