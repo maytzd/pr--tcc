@@ -55,6 +55,8 @@ main{
 .abas{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
 }
 
 
@@ -71,13 +73,21 @@ main{
     
 }
 .cor:hover{
-    color: #000000;
+    color: #ffffff  ;
+    border: 1px solid #ffffff;
+    text-decoration: underline; 
+    border-radius: 3px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
     
 
 /*cor para ficar com o contraste certo nas caixas*/
 
 article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: #ffffff;
     text-align: right;
     margin-right: 20px;
@@ -108,14 +118,15 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    margin-left: 380px;
+    width: 89%;
+    margin-left: 6%;
 }
 
 /*configuração de centralição do footer */
@@ -133,8 +144,8 @@ hr{
     flex-direction: column;
     justify-content: left;
 
-    padding-left: 105px;
-    padding-top: 60px;
+    padding-left: 6%;
+    padding-top: 3%;
 }
 
 /*config do titulo da primeira pagina*/
@@ -143,7 +154,7 @@ h1{
     flex-direction: column;
     text-align: left;
 
-    font-size: 60px;
+    font-size: 300%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 60px;
@@ -157,11 +168,11 @@ p{
     flex-direction: column;
     text-align: left;
 
-  font-family: "Archivo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 60px;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500%;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 /*criar as caixas e colocar lado a lado*/
@@ -169,30 +180,33 @@ p{
     display: flex;
     justify-content: center;
     text-align: left;
-    border: 1000px #ade8f4;
+    gap: 0.50%;
+    flex-wrap: wrap;
 }
 
 /*config de posição e conteúdo dentro da 1 caixa */
 .caixainf{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #14263f;
-    border-radius: 19px;
+    border-radius: 19PX;
     border: 3px solid #0077b6;
 
 
-    width: 500px;
-    height: 200px;
-    padding: 30px;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 30%;
+    height: 18.51%;
+    padding: 1.56%;
+    margin-top: 1.80%;
+    margin-right: 1.56%;
+    margin-bottom: 2.77%;
     color: #ffffff;
 
 }
 
 /*efeitos caixas 1*/
 .caixainf:hover{
+    flex-wrap: wrap;
     transform : translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
@@ -205,6 +219,7 @@ p{
 
 /*config de posição e conteúdo dentro da 2 caixa */
 .caixainff{
+    flex-wrap: wrap;
     background-color: #023e8a ;
     border-radius: 19px;
     color: #ffffff;
@@ -212,16 +227,18 @@ p{
 
 
 
-    width: 500px ;
-    height: 200px;
-    padding: 30px;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 30%;
+    height: 20%;
+    padding: 1.56%;
+    margin-top: 1.80%;
+    margin-right: 1.56%;
+    margin-bottom: 2.77%;
+
 }
 
 /*efeitos caixas 2*/
 .caixainff:hover{
+    flex-wrap: wrap;
     transform: translatey(-20px);
     transition: 1.2s;
     font-weight: 200px;
@@ -236,6 +253,7 @@ p{
 /*config dos textos de ajuda e compra das primeiras caixas */
 
 #caixaesquerda{
+    flex-wrap: wrap;
     text-align: left;
     font-size:15px;
 
@@ -261,10 +279,10 @@ h2{
 .meio{
 
     display: flex;
-    flex-direction: row;   
-    align-items: center; 
-    gap: 38px;
+    flex-direction: row;
     justify-content: center;
+    gap: 38px;
+    flex-wrap: wrap;
 
 }
 
@@ -272,13 +290,11 @@ h2{
 #TRILHA{
     display: flex;
     flex-direction: row;
-    padding-left: 105px;
-    padding-top: 25px;
+    padding-top: 1%;
     color:#ffffff;
+    margin-left: 6%;
 
-    gap:20px;
-
-    font-size: 35px;
+    font-size: 200%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 60px;
@@ -302,21 +318,20 @@ h2{
 
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 60px;
+    font-weight: 500%;
     font-style: normal;
 
 
     align-items: center;
-    text-align: left;
+    text-align: center;
 
-    font-size: 20px;
-    padding-top: 18px;
-    padding-left: 18px;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    width: 324px;
-    height: 180px;
-    border: 1px solid #023e8a;
+    font-size: 120%;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 28%;
+    border: 1% solid #023e8a;
     box-shadow:10px 10px 0px #023e8a;
 }
 
@@ -330,9 +345,11 @@ h2{
 
 /*organização dos texto das caixas do segundo topico */
 #caixaservicos{
-    padding-top: 15px;
-    font-size: 18px;
-    margin-top: 10px ;
+    padding-top: 2%;
+    font-size: 78%;
+    margin-top: 1% ;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 /*config do botão do projeto cor,tamanho e etc*/
@@ -342,18 +359,24 @@ h2{
     flex-direction: row;
     justify-content: left;
     background-color: #021125;
-    margin-left: 110px;
     margin-bottom: 70px;
-    padding: 18px;
+    margin-top: 10%;
+    width: 120%;
+
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
 
     color: #ffffff;
 
     border-radius: 10px;
     border: 1px solid #ade8f4;
-    text-align: center;
+
 }
 .projeto:hover{
     color:#0077b6;
+    border: 1px solid #0077b6;
 }
 
 /*removi a bordar, e a borda padrão do elemeno botão*/
@@ -361,9 +384,13 @@ button{
     outline: none;
     border: none;
     background-color: #021125;
+    font-size: 100%;
+
     
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 60px;
+    
+    margin-left: 6%;
 }

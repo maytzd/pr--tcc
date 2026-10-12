@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/*fonte Nunito usado no titulo */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*reset basico de configurações */
+
+/*cores utilizadas 
+
+021125 · fundos das sessões
+14263f  . cor das caixar menores
+023e8a . cor das bordas e sombreados,fundos 3d das caixas menores
+#ffffff · texto e titulos */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*configurações de header e footer(começo e final de página */
+
+/*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
+body{
+    background-color: #021125;
+    color: #ffffff;
+}
+header{
+    background-color: #14263f ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+    border: #ffffff;
+}
+
+/*posção da logo no header */
+img{
+    display: flex;
+    justify-content: left;
+    width: 130px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+/*caixa para configurar as abas */
+.abas{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*configurações dos links das abas*/
+
+.cor{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+    
+}
+.cor:hover{
+    color: #ffffff  ;
+    border: 1px solid #ffffff;
+    text-decoration: underline; 
+    border-radius: 3px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+    
+
+/*cor para ficar com o contraste certo nas caixas*/
+
+article{
+    color: #ffffff;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 60px;
+}
+
+article:hover{
+    transform: translatey(-20px);
+    transition: 1.2s;
+    font-weight: 200px;
+    color: #000000; 
+}
+
+/*footer config*/
+
+footer{
+    background-color: #14263f ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+}
+
+/*caixa que vai as informações dentro */
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 380px;
+}
+
+/*configuração de centralição do footer */
+
+.text{
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*configuração da caixa MAIOR da primeira sessão que aliha as caixas de dentro*/
+
+.containerprincipal{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3%;
+    margin-bottom: 30%;
+    gap: 5%;
+}
+
+
+/*configurações do titulo principal, paragrafo */
+
+.titulo-cards  {
+    margin-left: 10%;
+    text-align: left;
+
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 100%;
+}
+
+h1{
+    text-align: left;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+}
+
+/*conf das caixa maior*/
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 8%;
+    width: 500px;
+    height: 50px;
+    margin-left: 10%;
+}
+
+
+/*caixa dos topicos */
+
+.btn-trilha{
+    display: flex;
+    flex-direction: row;
+    background-color: #021125;
+    border: 1px solid #14263f;
+    color: #14263f;
+
+
+    width: 80px;
+    height: 60%;
+
+    margin-top:  4%;
+    border-radius: 16px ;
+    text-align: center;
+    padding-right: 19%;
+    padding-left: 6%;
+    padding-top: 2%;
+    padding-bottom: 6%;
+
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/*transição caixas topicos */
+.btn-trilha:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #14263f;
+    cursor: pointer;
+}
+
+
+
