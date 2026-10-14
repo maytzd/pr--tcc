@@ -302,7 +302,7 @@ h3{
 
 /*efeito 2 primeiros blocos*/
 .card-one:hover{
-    background-color: #14263f;
+    background-color: #0E89FF;
     transition: 1.2s;
     transform:  translateY(28px) ;
 }
@@ -363,7 +363,7 @@ h3{
 /*efeito 2 últimos blocos*/
 
 .card-two:hover{
-    background-color: #14263f;
+    background-color: #0E89FF;
     transition: 1.2s;
     transform:  translateY(28px) ;
 }
