@@ -24,22 +24,32 @@
 
 /*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
 body{
-    background-color: #021125;
+    background-color: #FFFFFF;
     color: #ffffff;
     width: 100%;
-    padding-top: 140px;
+    /*padding-top: 140px;*/
 }
 header{ 
-    position: fixed;
+
+    position: sticky;
+    top: 0%;
+    background-color: #0E89FF ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+    border: #ffffff;
+    z-index: 1000;
 
 
+    /*position: sticky;
+    top: 0;
     background-color: #14263f ;
     color:#ffffff;
     width: 100%;
     height: auto;
     border: #ffffff;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000;*/
 }
 
 /*posção da logo no header */
@@ -74,7 +84,7 @@ img{
     
 }
 .cor:hover{
-    color: #ffffff  ;
+    color: #404040 ;
     border: 1px solid #ffffff;
     text-decoration: underline; 
     border-radius: 3px;
@@ -149,6 +159,7 @@ hr{
 
     margin-top: 3%;
     gap: 5%;
+    color: #404040;
 }
 
 
@@ -199,8 +210,8 @@ h1{
 .btn-trilha{
     display: flex;
     flex-direction: row;
-    background-color: #021125;
-    border: 1px solid #14263f;
+    background-color: #002F6C;
+    border: 2px solid #0E89FF;
     color: #14263f;
 
 
@@ -222,7 +233,7 @@ h1{
 .btn-trilha:hover{
     color: #ffffff;
     border: 1px solid #ffffff;
-    background-color: #14263f;
+    background-color: #0E89FF;
     cursor: pointer;
 }
 
@@ -262,8 +273,8 @@ h3{
 .card-one{
     /*config de cor, borda e como a caixa deve se comportar */
     display: flex;
-    background-color: #021125;
-    border: 1px solid #14263f;
+    background-color: #002F6C;
+    border: 3px solid #0E89FF;
     border-radius: 16px ;
     color: #ffffff;
 
@@ -322,8 +333,8 @@ h3{
 .card-two{
     /*config de cor, borda e como a caixa deve se comportar */
     display: flex;
-    background-color: #021125;
-    border: 1px solid #14263f;
+    background-color: #002F6C;
+    border: 3px solid #0E89FF;
     border-radius: 16px ;
     color: #ffffff;
 
@@ -382,6 +393,3 @@ li{
     padding-bottom: 1%;
 
 }
-
-
-
