@@ -27,7 +27,7 @@ body{
     background-color: #021125;
     color: #ffffff;
     width: 100%;
-    padding-top: 140px;
+   
 }
 header{ 
     position: sticky;
@@ -204,7 +204,7 @@ h1{
 
 
     width: 50%;
-    height: 60%;
+    height: 80%;
 
     margin-top:  8%;
     border-radius: 16px ;
