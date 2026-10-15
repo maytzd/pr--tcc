@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/*fonte Nunito usado no titulo */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*reset basico de configurações */
+
+/*cores utilizadas 
+
+#652f91 · roxo.
+#000000 · fundos
+#ffffff · texto e titulos */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*configurações de header e footer(começo e final de página */
+
+/*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
+body{
+    
+    background-color: #021125;
+    color: #ffffff;
+}
+header{
+    background-color: #14263f ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+    border: #ffffff;
+}
+
+/*posção da logo no header */
+img{
+    display: flex;
+    justify-content: left;
+    width: 130px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+/*caixa para configurar as abas */
+.abas{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*configurações dos links das abas*/
+
+.cor{
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+    
+}
+    
+
+/*cor para ficar com o contraste certo nas caixas*/
+
+article{
+    color: #ffffff;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 60px;
+}
+
+article:hover{
+    transform: translatey(-20px);
+    transition: 1.2s;
+    font-weight: 200px;
+    color: #000000; 
+
+}
+
+a:hover{
+    color: #000000; 
+
+}
+
+/*footer config*/
+
+footer{
+    background-color: #14263f ;
+    color:#ffffff;
+    width: 100%;
+    height: 120px;
+}
+
+/*caixa que vai as informações dentro */
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 380px;
+
+}
+/*configuração de centralição do footer */
+
+.text{
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}

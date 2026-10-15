@@ -166,6 +166,10 @@ hr{
         line-height: 28px;
 }
 
+a {
+    color:#ffffff;
+}
+
 /*fonte e forma de se porta*/
 h1{
     display: flex;
@@ -194,7 +198,7 @@ h3{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    color: #0E89FF;
+    color: #95c8f8;
 
 }
 
@@ -298,7 +302,7 @@ h2{
 h2{
     text-align: left;
     font-size: 25px;
-    color: #0E89FF;
+    color: #ffffff;
 }
 
 /*tconfigurações de trilhas 1 pagina */

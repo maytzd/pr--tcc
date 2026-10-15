@@ -251,6 +251,8 @@ h2{
     border: none;
     background-color: #c53030;
     cursor: pointer;
+    transition: 1.2s;
+    transform:  translateY(-10px) ;
 }
 
 h3 a{
@@ -288,8 +290,8 @@ h3{
 .card-one{
     /*config de cor, borda e como a caixa deve se comportar */
     display: flex;
-    background-color: #021125;
-    border: 1px solid #14263f;
+    background-color: #002F6C;
+    border: 3px solid #0E89FF;
     border-radius: 16px ;
     color: #ffffff;
 
@@ -340,8 +342,8 @@ h3{
 .card-two{
     /*config de cor, borda e como a caixa deve se comportar */
     display: flex;
-    background-color: #021125;
-    border: 1px solid #14263f;
+    background-color: #002F6C;
+    border: 3px solid #0E89FF;
     border-radius: 16px ;
     color: #ffffff;
 
@@ -388,7 +390,12 @@ h3{
     padding-bottom: 3%;
 }
 
+.card-texto h3{
+    padding-bottom: 5%;
+}
+
 li{
+    padding-bottom: 1%;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
