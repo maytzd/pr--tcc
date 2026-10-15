@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/*fonte Nunito usado no titulo */
+/*font para header*/
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/*font para titulo*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/*font para paragrafo */
 
 /*reset basico de configurações */
 
@@ -24,7 +26,6 @@
 
 /*as cores colocadas no body foi somente para teste da divisão das sessões de como ficaria */
 body{
-    
     background-color: #FFFFFF;
     color: #404040;
 }
@@ -37,6 +38,11 @@ header{
     height: 120px;
     border: #ffffff;
     z-index: 1000;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600px;
+    font-style: normal;
 }
 
 /*posção da logo no header */
@@ -69,19 +75,16 @@ main{
     color: #ffffff;
     text-align: right;
     margin-right: 20px;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 60px;
-    
 }
 .cor:hover{
-    color: #404040 ;
-    border: 1px solid #ffffff;
-    text-decoration: underline; 
-    border-radius: 3px;
+    background-color: #c53030;
+    border-radius: 7px;
     padding-top: 3%;
     padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    width: 100%;
 }
     
 
@@ -89,31 +92,32 @@ main{
 
 article{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     color: #404040;
     text-align: right;
     margin-right: 20px;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 60px;
 
     margin-bottom: 2%;
+    margin-top: -3%;
 }
 
 article:hover{
-    transform: translatey(-20px);
+    transform: translatey(-10px);
     transition: 1.2s;
     font-weight: 200px;
-    color: #000000; 
     margin-bottom: 2%;
+}
+
+/*mexer no tamanho da logo no header*/
+nav img{
+    width: 8%;
 }
 
 /*footer config*/
 
 footer{
-    background-color: #14263f ;
+    background-color: #0E89FF;
     color:#ffffff;
     width: 100%;
     height: 120px;
@@ -154,31 +158,51 @@ hr{
     padding-top: 3%;
 }
 
-/*config do titulo da primeira pagina*/
+.inicio h1{
+        line-height: 40px;
+}
+
+.inicio p {
+        line-height: 28px;
+}
+
+/*fonte e forma de se porta*/
 h1{
     display: flex;
     flex-direction: column;
     text-align: left;
 
-    font-size: 300%;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 60px;
-    font-style: normal;
+font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
-
-/*fonte e forma de se porta*/
 p{
     display: flex;
     flex-direction: column;
     text-align: left;
 
-    font-family: "Archivo", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500%;
+    font-weight: 400;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
+}
+
+h3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #0E89FF;
+
+}
+
+h2{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
 }
 
 /*criar as caixas e colocar lado a lado*/
@@ -207,7 +231,6 @@ p{
     margin-right: 1.56%;
     margin-bottom: 2.77%;
     color: #ffffff;
-
 }
 
 /*efeitos caixas 1*/
@@ -217,11 +240,16 @@ p{
     transition: 1.2s;
     font-weight: 200px;
 
-    background-color: #0E89FF ;
     border-radius: 19px;
     color: #ffffff;
     border: none;
 }
+
+.caixainf p{
+    line-height: 26px;
+}
+
+
 
 /*config de posição e conteúdo dentro da 2 caixa */
 .caixainff{
@@ -240,7 +268,6 @@ p{
     margin-right: 1.56%;
     margin-bottom: 2.77%;
     border: 3px solid #0077b6;
-
 }
 
 /*efeitos caixas 2*/
@@ -250,10 +277,13 @@ p{
     transition: 1.2s;
     font-weight: 200px;
 
-    background-color: #0E89FF;
     border-radius: 19px;
     border: none;
     
+}
+
+.caixainff p{
+    line-height: 26px;
 }
 
 
@@ -263,34 +293,23 @@ p{
     flex-wrap: wrap;
     text-align: left;
     font-size:15px;
-
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 60px;
-    font-style: normal;
 }
 
 h2{
     text-align: left;
     font-size: 25px;
-
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 60px;
-    font-style: normal;
+    color: #0E89FF;
 }
 
 /*tconfigurações de trilhas 1 pagina */
 
 /*caixa pai das 3 caixas menores*/
 .meio{
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 38px;
     flex-wrap: wrap;
-
 }
 
 /*config do titulo 2 bloco */
@@ -300,12 +319,6 @@ h2{
     padding-top: 1%;
     color:#404040;
     margin-left: 6%;
-
-    font-size: 200%;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 60px;
-    font-style: normal;
 }
 
 
@@ -347,7 +360,12 @@ h2{
     transition: 1.2s;
     transform:  translateY(28px) ;
     background-color: #023e8a;
-    box-shadow:10px 10px 0px #0E89FF;
+    box-shadow:10px 10px 0px #c53030;
+}
+
+.jornada h3{
+    text-align: left;
+    padding-left: 10%;
 }
 
 /*organização dos texto das caixas do segundo topico */
@@ -356,12 +374,15 @@ h2{
     font-size: 78%;
     margin-top: 1% ;
     padding-bottom: 1%;
-    text-align: center;
+    padding-left: 10%;
+    text-align: left;
+
+    line-height: 26px;
 }
 
 /*config do botão do projeto cor,tamanho e etc*/
 
-.projeto{
+.Sobre{
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -373,18 +394,18 @@ h2{
 
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 10%;
+    padding-left: 48%;
 
-    color: #404040;
+    color: #0E89FF;
+    text-align: center;
 
     border-radius: 10px;
-    border: 1px solid #404040;
-
+    border: 1px solid #0E89FF;
 }
-.projeto:hover{
+.Sobre:hover{
     color:#FFFFFF;
     border: none;
-    background-color: #0E89FF;
+    background-color: #c53030;
 }
 
 /*removi a bordar, e a borda padrão do elemeno botão*/
@@ -393,12 +414,15 @@ button{
     border: none;
     background-color: #ffffff;
     font-size: 100%;
+    text-align: center;
+
+    width: 18%;
 
     
-    font-family: "Nunito", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
+    font-weight: bold;
     font-style: normal;
-    font-weight: 60px;
     
     margin-left: 6%;
 }
