@@ -234,6 +234,7 @@ h2{
 .caixa:hover{
     transform: translatey(-14px);
     transition: 1.2s;
+    box-shadow:10px 10px 0px #c53030;
 }
 
 /*cofig do titulo e pagrafro sobre o teste */
@@ -277,7 +278,7 @@ h2{
 
 /*efeitos caixas 1*/
 .caixaone:hover{
-    transform : translatey(-20px);
+    transform : translatey(20px);
     transition: 1.2s;
     font-weight: 200px;
 
@@ -311,7 +312,7 @@ h2{
 /*efeitos caixas 2*/
 .caixaitwo:hover{
     flex-wrap: wrap;
-    transform: translatey(-20px);
+    transform : translatey(20px);
     transition: 1.2s;
     font-weight: 200px;
 
